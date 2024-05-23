@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../midi_project.srcs/sources_1/ip/blk_mem_gen_y_1/sim/blk_mem_gen_y.vhd" \
+
+nosort

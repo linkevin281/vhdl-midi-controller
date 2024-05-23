@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon May 30 11:39:38 2022
+# Process ID: 2124
+# Current directory: O:/midi_project/midi_project.runs/blk_mem_gen_y_synth_1
+# Command line: vivado.exe -log blk_mem_gen_y.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_y.tcl
+# Log file: O:/midi_project/midi_project.runs/blk_mem_gen_y_synth_1/blk_mem_gen_y.vds
+# Journal file: O:/midi_project/midi_project.runs/blk_mem_gen_y_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_y.tcl -notrace

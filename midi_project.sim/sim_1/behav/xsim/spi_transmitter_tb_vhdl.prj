@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../VHDL/midi_clock_generation.vhd" \
+"../../../../VHDL/midi_spi_transmitter.vhd" \
+"../../../../VHDL/spi_transmitter_tb.vhd" \
+
+# Do not sort compile order
+nosort

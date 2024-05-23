@@ -1,0 +1,12 @@
+0.6
+2018.3
+Mar 26 2019
+04:57:32
+O:/CS56-22S/midi_project/VHDL/midi_clock_generation.vhd,1654022072,vhdl,,,,midi_clock_generation,,,,,,,,
+O:/CS56-22S/midi_project/VHDL/midi_controller.vhd,1653956426,vhdl,,,,midi_controller,,,,,,,,
+O:/CS56-22S/midi_project/VHDL/midi_datapath.vhd,1654037784,vhdl,,,,midi_datapath,,,,,,,,
+O:/CS56-22S/midi_project/VHDL/midi_spi_transmitter.vhd,1654026184,vhdl,,,,midi_spi_transmitter,,,,,,,,
+O:/CS56-22S/midi_project/midi_project.srcs/sim_1/imports/VHDL/midi_main_tb.vhd,1654034768,vhdl,,,,midi_main_tb,,,,,,,,
+O:/CS56-22S/midi_project/midi_project.srcs/sources_1/imports/VHDL/midi_math.vhd,1654034523,vhdl,,,,midi_math,,,,,,,,
+O:/CS56-22S/midi_project/midi_project.srcs/sources_1/imports/VHDL/midi_shell.vhd,1654037125,vhdl,,,,midi_shell,,,,,,,,
+O:/CS56-22S/midi_project/midi_project.srcs/sources_1/ip/blk_mem_gen_y_1/sim/blk_mem_gen_y.vhd,1653925174,vhdl,,,,blk_mem_gen_y,,,,,,,,

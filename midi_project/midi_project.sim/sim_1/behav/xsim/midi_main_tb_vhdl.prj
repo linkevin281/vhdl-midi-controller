@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../midi_project.srcs/sources_1/ip/blk_mem_gen_y_1/sim/blk_mem_gen_y.vhd" \
+"../../../../VHDL/midi_clock_generation.vhd" \
+"../../../../VHDL/midi_controller.vhd" \
+"../../../../VHDL/midi_datapath.vhd" \
+"../../../../midi_project.srcs/sources_1/imports/VHDL/midi_math.vhd" \
+"../../../../midi_project.srcs/sources_1/imports/VHDL/midi_shell.vhd" \
+"../../../../VHDL/midi_spi_transmitter.vhd" \
+"../../../../midi_project.srcs/sim_1/imports/VHDL/midi_main_tb.vhd" \
+
+# Do not sort compile order
+nosort

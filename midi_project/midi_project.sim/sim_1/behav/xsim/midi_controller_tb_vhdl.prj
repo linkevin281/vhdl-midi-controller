@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../VHDL/midi_controller.vhd" \
+"../../../../VHDL/midi_datapath.vhd" \
+"../../../../midi_project.srcs/sim_1/new/controller_tb.vhd" \
+
+# Do not sort compile order
+nosort

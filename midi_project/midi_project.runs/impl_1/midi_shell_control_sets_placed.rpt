@@ -1,0 +1,93 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Tue May 31 19:09:45 2022
+| Host         : mecha-8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file midi_shell_control_sets_placed.rpt
+| Design       : midi_shell
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |    81 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      3 |            1 |
+|      4 |            1 |
+|      5 |            2 |
+|      6 |            1 |
+|      9 |            2 |
+|     10 |            2 |
+|     11 |            1 |
+|     12 |            3 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              23 |           15 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              43 |           10 |
+| Yes          | No                    | No                     |              22 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              87 |           31 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+------------------------------------------+----------------------------------------------------+------------------+----------------+
+|          Clock Signal         |               Enable Signal              |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++-------------------------------+------------------------------------------+----------------------------------------------------+------------------+----------------+
+|  CLK_EXT_IBUF_BUFG            |                                          |                                                    |                1 |              1 |
+|  clk_division/system_clk_port | math/phasecount[11]_i_2_n_0              |                                                    |                1 |              1 |
+|  clk_division/system_clk_port | math/TCnotes                             | math/result[10]_i_1_n_0                            |                2 |              3 |
+|  clk_division/system_clk_port | transmitter/count_en                     | transmitter/load_enable                            |                2 |              4 |
+|  clk_division/system_clk_port |                                          | controller/Baud_Counter[4]_i_1_n_0                 |                1 |              5 |
+|  clk_division/system_clk_port | controller/TCbaud_port0                  | controller/bitcount                                |                1 |              5 |
+|  CLK_EXT_IBUF_BUFG            |                                          | clk_division/system_clk_divider_counter[5]_i_1_n_0 |                1 |              6 |
+|  clk_division/system_clk_port | controller/TCbaud_port_reg_1[0]          | controller/SR[0]                                   |                3 |              9 |
+|  clk_division/system_clk_port | math/TCnotes                             |                                                    |                3 |              9 |
+|  clk_division/system_clk_port | controller/TCbaud_port_reg_0[0]          | controller/SR[0]                                   |                4 |             10 |
+|  clk_division/system_clk_port | math/delay0                              | math/noteaddr[4]_i_1_n_0                           |                3 |             10 |
+|  clk_division/system_clk_port | math/phasecount[11]_i_2_n_0              | math/phasecount[11]_i_1_n_0                        |                3 |             11 |
+|  clk_division/system_clk_port | transmitter/shift_reg[11]_i_1_n_0        |                                                    |                3 |             12 |
+|  clk_division/system_clk_port | math/yvalues_reg_reg_0_15_0_0__0_i_1_n_0 |                                                    |                3 |             12 |
+|  clk_division/system_clk_port | math/yvalues_reg_reg_0_15_0_0_i_1_n_0    |                                                    |                3 |             12 |
+|  clk_division/system_clk_port | controller/update_out                    |                                                    |                2 |             16 |
+|  clk_division/system_clk_port | datapath/numerator0                      | math/TCnotes                                       |                6 |             17 |
+|  clk_division/system_clk_port | controller/E[0]                          | controller/SR[0]                                   |                7 |             18 |
+|  clk_division/system_clk_port |                                          |                                                    |               14 |             22 |
+|  clk_division/system_clk_port |                                          | transmitter/count[0]_i_1_n_0                       |                8 |             32 |
++-------------------------------+------------------------------------------+----------------------------------------------------+------------------+----------------+
+
+

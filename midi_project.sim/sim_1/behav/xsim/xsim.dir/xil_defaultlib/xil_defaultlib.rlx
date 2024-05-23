@@ -1,0 +1,14 @@
+0.6
+2018.3
+Mar 26 2019
+04:57:32
+O:/midi_project/VHDL/midi_clock_generation.vhd,1654022072,vhdl,,,,midi_clock_generation,,,,,,,,
+O:/midi_project/VHDL/midi_controller.vhd,1654292863,vhdl,,,,midi_controller,,,,,,,,
+O:/midi_project/VHDL/midi_datapath.vhd,1654558721,vhdl,,,,midi_datapath,,,,,,,,
+O:/midi_project/VHDL/midi_main_tb.vhd,1654292749,vhdl,,,,midi_main_tb,,,,,,,,
+O:/midi_project/VHDL/midi_math.vhd,1654559432,vhdl,,,,midi_math,,,,,,,,
+O:/midi_project/VHDL/midi_shell.vhd,1654193547,vhdl,,,,midi_shell,,,,,,,,
+O:/midi_project/VHDL/midi_spi_transmitter.vhd,1654192138,vhdl,,,,midi_spi_transmitter,,,,,,,,
+O:/midi_project/VHDL/spi_transmitter_tb.vhd,1654024649,vhdl,,,,spi_transmitter_tb,,,,,,,,
+O:/midi_project/midi_project.srcs/sim_1/new/controller_tb.vhd,1653952875,vhdl,,,,midi_tb,,,,,,,,
+O:/midi_project/midi_project.srcs/sources_1/ip/blk_mem_gen_y_1/sim/blk_mem_gen_y.vhd,1653925173,vhdl,,,,blk_mem_gen_y,,,,,,,,

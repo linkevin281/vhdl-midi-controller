@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue May 31 18:50:01 2022
+# Process ID: 7648
+# Current directory: O:/CS56-22S/midi_project/midi_project.runs/impl_1
+# Command line: vivado.exe -log midi_shell.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source midi_shell.tcl -notrace
+# Log file: O:/CS56-22S/midi_project/midi_project.runs/impl_1/midi_shell.vdi
+# Journal file: O:/CS56-22S/midi_project/midi_project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source midi_shell.tcl -notrace

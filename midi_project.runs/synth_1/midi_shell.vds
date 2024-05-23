@@ -1,0 +1,674 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon Jun  6 20:07:48 2022
+# Process ID: 11128
+# Current directory: O:/midi_project/midi_project.runs/synth_1
+# Command line: vivado.exe -log midi_shell.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source midi_shell.tcl
+# Log file: O:/midi_project/midi_project.runs/synth_1/midi_shell.vds
+# Journal file: O:/midi_project/midi_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source midi_shell.tcl -notrace
+Command: synth_design -top midi_shell -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13504 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 418.895 ; gain = 100.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'midi_shell' [O:/midi_project/VHDL/midi_shell.vhd:30]
+	Parameter CLOCK_DIVIDER_RATIO bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'midi_clock_generation' declared at 'O:/midi_project/VHDL/midi_clock_generation.vhd:14' bound to instance 'clk_division' of component 'midi_clock_generation' [O:/midi_project/VHDL/midi_shell.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'midi_clock_generation' [O:/midi_project/VHDL/midi_clock_generation.vhd:29]
+	Parameter CLOCK_DIVIDER_RATIO bound to: 50 - type: integer 
+INFO: [Synth 8-113] binding component instance 'system_clock_buffer' to cell 'BUFG' [O:/midi_project/VHDL/midi_clock_generation.vhd:68]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'clock_forwarding_ODDR' to cell 'ODDR' [O:/midi_project/VHDL/midi_clock_generation.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'midi_clock_generation' (1#1) [O:/midi_project/VHDL/midi_clock_generation.vhd:29]
+	Parameter BAUD_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'midi_controller' declared at 'O:/midi_project/VHDL/midi_controller.vhd:14' bound to instance 'controller' of component 'midi_controller' [O:/midi_project/VHDL/midi_shell.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'midi_controller' [O:/midi_project/VHDL/midi_controller.vhd:41]
+	Parameter BAUD_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'midi_controller' (2#1) [O:/midi_project/VHDL/midi_controller.vhd:41]
+INFO: [Synth 8-3491] module 'midi_datapath' declared at 'O:/midi_project/VHDL/midi_datapath.vhd:13' bound to instance 'datapath' of component 'midi_datapath' [O:/midi_project/VHDL/midi_shell.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'midi_datapath' [O:/midi_project/VHDL/midi_datapath.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'midi_datapath' (3#1) [O:/midi_project/VHDL/midi_datapath.vhd:44]
+INFO: [Synth 8-3491] module 'midi_math' declared at 'O:/midi_project/VHDL/midi_math.vhd:13' bound to instance 'math' of component 'midi_math' [O:/midi_project/VHDL/midi_shell.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'midi_math' [O:/midi_project/VHDL/midi_math.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'midi_math' (4#1) [O:/midi_project/VHDL/midi_math.vhd:36]
+INFO: [Synth 8-3491] module 'blk_mem_gen_y' declared at 'O:/midi_project/midi_project.runs/synth_1/.Xil/Vivado-11128-CADLAB-09/realtime/blk_mem_gen_y_stub.v:6' bound to instance 'BROM' of component 'blk_mem_gen_y' [O:/midi_project/VHDL/midi_shell.vhd:249]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_y' [O:/midi_project/midi_project.runs/synth_1/.Xil/Vivado-11128-CADLAB-09/realtime/blk_mem_gen_y_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_y' (5#1) [O:/midi_project/midi_project.runs/synth_1/.Xil/Vivado-11128-CADLAB-09/realtime/blk_mem_gen_y_stub.v:6]
+	Parameter TOTAL bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'midi_spi_transmitter' declared at 'O:/midi_project/VHDL/midi_spi_transmitter.vhd:14' bound to instance 'transmitter' of component 'midi_spi_transmitter' [O:/midi_project/VHDL/midi_shell.vhd:256]
+INFO: [Synth 8-638] synthesizing module 'midi_spi_transmitter' [O:/midi_project/VHDL/midi_spi_transmitter.vhd:38]
+	Parameter TOTAL bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'midi_spi_transmitter' (6#1) [O:/midi_project/VHDL/midi_spi_transmitter.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'midi_shell' (7#1) [O:/midi_project/VHDL/midi_shell.vhd:30]
+WARNING: [Synth 8-3331] design midi_math has unconnected port yval_port[15]
+WARNING: [Synth 8-3331] design midi_math has unconnected port yval_port[14]
+WARNING: [Synth 8-3331] design midi_math has unconnected port yval_port[13]
+WARNING: [Synth 8-3331] design midi_math has unconnected port yval_port[12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 475.816 ; gain = 157.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 475.816 ; gain = 157.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 475.816 ; gain = 157.113
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [o:/midi_project/midi_project.srcs/sources_1/ip/blk_mem_gen_y_1/blk_mem_gen_y/blk_mem_gen_y_in_context.xdc] for cell 'BROM'
+Finished Parsing XDC File [o:/midi_project/midi_project.srcs/sources_1/ip/blk_mem_gen_y_1/blk_mem_gen_y/blk_mem_gen_y_in_context.xdc] for cell 'BROM'
+Parsing XDC File [O:/midi_project/VHDL/midi_constraints.xdc]
+Finished Parsing XDC File [O:/midi_project/VHDL/midi_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [O:/midi_project/VHDL/midi_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/midi_shell_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/midi_shell_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 806.855 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 806.859 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 806.859 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 806.859 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 806.859 ; gain = 488.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 806.859 ; gain = 488.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for BROM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 806.859 ; gain = 488.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "system_clk_tog" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'midi_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'subcs_reg' in module 'midi_controller'
+INFO: [Synth 8-5546] ROM "subns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "statshift_en_port" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "valshift_en_port" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "velshift_en_port" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "check_en_port" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reset_port" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "update_port" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "add_port" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "baud_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "subns" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "phasecount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mult_const" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitshifts" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'midi_spi_transmitter'
+INFO: [Synth 8-5545] ROM "ns" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "load_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "spi_cs_port" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                             0000
+                waithalf |                               01 |                             0111
+                   shift |                               10 |                             1000
+                finished |                               11 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'subcs_reg' using encoding 'sequential' in module 'midi_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                              000 |                             1001
+               getstatus |                              001 |                             0001
+                  getval |                              010 |                             0010
+                  getvel |                              011 |                             0011
+                   check |                              100 |                             0100
+                     add |                              101 |                             0101
+                   clear |                              110 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'midi_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                    load |                              010 |                               11
+                   shift |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'one-hot' in module 'midi_spi_transmitter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 806.859 ; gain = 488.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 27    
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	              300 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module midi_clock_generation 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module midi_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 8     
+Module midi_datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+Module midi_math 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 27    
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              300 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module midi_spi_transmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/phasecount_reg[11:0]' into 'math/phasecount_reg[11:0]' [O:/midi_project/VHDL/midi_math.vhd:114]
+INFO: [Synth 8-4471] merging register 'math/numerator_reg[15:0]' into 'math/numerator_reg[15:0]' [O:/midi_project/VHDL/midi_math.vhd:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'datapath/location_mem_reg' and it is trimmed from '9' to '5' bits. [O:/midi_project/VHDL/midi_datapath.vhd:104]
+INFO: [Synth 8-5546] ROM "clk_division/system_clk_tog" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "controller/TC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "math/mult_const" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "transmitter/ns" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP math/s0, operation Mode is: (A2*(B:0x36))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s0.
+DSP Report: register math/s0 is absorbed into DSP math/s0.
+DSP Report: operator math/s0 is absorbed into DSP math/s0.
+DSP Report: Generating DSP math/s1, operation Mode is: (A2*(B:0x38))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s1.
+DSP Report: register math/s1 is absorbed into DSP math/s1.
+DSP Report: operator math/s1 is absorbed into DSP math/s1.
+DSP Report: Generating DSP math/s2, operation Mode is: (A2*(B:0x3c))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s2.
+DSP Report: register math/s2 is absorbed into DSP math/s2.
+DSP Report: operator math/s2 is absorbed into DSP math/s2.
+DSP Report: Generating DSP math/s4, operation Mode is: (A2*(B:0x44))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s4.
+DSP Report: register math/s4 is absorbed into DSP math/s4.
+DSP Report: operator math/s4 is absorbed into DSP math/s4.
+DSP Report: Generating DSP math/s5, operation Mode is: (A2*(B:0x48))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s5.
+DSP Report: register math/s5 is absorbed into DSP math/s5.
+DSP Report: operator math/s5 is absorbed into DSP math/s5.
+DSP Report: Generating DSP math/s6, operation Mode is: (A2*(B:0x4c))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s6.
+DSP Report: register math/s6 is absorbed into DSP math/s6.
+DSP Report: operator math/s6 is absorbed into DSP math/s6.
+DSP Report: Generating DSP math/s7, operation Mode is: (A2*(B:0x50))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s7.
+DSP Report: register math/s7 is absorbed into DSP math/s7.
+DSP Report: operator math/s7 is absorbed into DSP math/s7.
+DSP Report: Generating DSP math/s8, operation Mode is: (A2*(B:0x56))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s8.
+DSP Report: register math/s8 is absorbed into DSP math/s8.
+DSP Report: operator math/s8 is absorbed into DSP math/s8.
+DSP Report: Generating DSP math/s9, operation Mode is: (A2*(B:0x5a))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s9.
+DSP Report: register math/s9 is absorbed into DSP math/s9.
+DSP Report: operator math/s9 is absorbed into DSP math/s9.
+DSP Report: Generating DSP math/s10, operation Mode is: (A2*(B:0x60))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s10.
+DSP Report: register math/s10 is absorbed into DSP math/s10.
+DSP Report: operator math/s10 is absorbed into DSP math/s10.
+DSP Report: Generating DSP math/s11, operation Mode is: (A2*(B:0x66))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s11.
+DSP Report: register math/s11 is absorbed into DSP math/s11.
+DSP Report: operator math/s11 is absorbed into DSP math/s11.
+DSP Report: Generating DSP math/s12, operation Mode is: (A2*(B:0x6c))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s12.
+DSP Report: register math/s12 is absorbed into DSP math/s12.
+DSP Report: operator math/s12 is absorbed into DSP math/s12.
+DSP Report: Generating DSP math/s13, operation Mode is: (A2*(B:0x72))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s13.
+DSP Report: register math/s13 is absorbed into DSP math/s13.
+DSP Report: operator math/s13 is absorbed into DSP math/s13.
+DSP Report: Generating DSP math/s14, operation Mode is: (A2*(B:0x78))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s14.
+DSP Report: register math/s14 is absorbed into DSP math/s14.
+DSP Report: operator math/s14 is absorbed into DSP math/s14.
+DSP Report: Generating DSP math/s16, operation Mode is: (A2*(B:0x88))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s16.
+DSP Report: register math/s16 is absorbed into DSP math/s16.
+DSP Report: operator math/s16 is absorbed into DSP math/s16.
+DSP Report: Generating DSP math/s17, operation Mode is: (A2*(B:0x90))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s17.
+DSP Report: register math/s17 is absorbed into DSP math/s17.
+DSP Report: operator math/s17 is absorbed into DSP math/s17.
+DSP Report: Generating DSP math/s18, operation Mode is: (A2*(B:0x98))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s18.
+DSP Report: register math/s18 is absorbed into DSP math/s18.
+DSP Report: operator math/s18 is absorbed into DSP math/s18.
+DSP Report: Generating DSP math/s19, operation Mode is: (A2*(B:0xa0))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s19.
+DSP Report: register math/s19 is absorbed into DSP math/s19.
+DSP Report: operator math/s19 is absorbed into DSP math/s19.
+DSP Report: Generating DSP math/s20, operation Mode is: (A2*(B:0xaa))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s20.
+DSP Report: register math/s20 is absorbed into DSP math/s20.
+DSP Report: operator math/s20 is absorbed into DSP math/s20.
+DSP Report: Generating DSP math/s21, operation Mode is: (A2*(B:0xb4))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s21.
+DSP Report: register math/s21 is absorbed into DSP math/s21.
+DSP Report: operator math/s21 is absorbed into DSP math/s21.
+DSP Report: Generating DSP math/s22, operation Mode is: (A2*(B:0xbe))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s22.
+DSP Report: register math/s22 is absorbed into DSP math/s22.
+DSP Report: operator math/s22 is absorbed into DSP math/s22.
+DSP Report: Generating DSP math/s23, operation Mode is: (A2*(B:0xca))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s23.
+DSP Report: register math/s23 is absorbed into DSP math/s23.
+DSP Report: operator math/s23 is absorbed into DSP math/s23.
+DSP Report: Generating DSP math/s24, operation Mode is: (A2*(B:0xd6))'.
+DSP Report: register math/phasecount_reg is absorbed into DSP math/s24.
+DSP Report: register math/s24 is absorbed into DSP math/s24.
+DSP Report: operator math/s24 is absorbed into DSP math/s24.
+INFO: [Synth 8-3886] merging instance 'math/s15[0]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3886] merging instance 'math/s3[0]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3886] merging instance 'math/s15[1]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3886] merging instance 'math/s3[1]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3886] merging instance 'math/s15[2]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3886] merging instance 'math/s3[2]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3886] merging instance 'math/s15[3]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3886] merging instance 'math/s3[3]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3886] merging instance 'math/s15[4]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3886] merging instance 'math/s3[4]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3886] merging instance 'math/s15[5]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3886] merging instance 'math/s3[5]' (FD) to 'math/s15[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\math/s15[6] )
+INFO: [Synth 8-3886] merging instance 'math/s3[6]' (FD) to 'math/s15[7]'
+INFO: [Synth 8-3886] merging instance 'math/s3[7]' (FD) to 'math/s15[8]'
+INFO: [Synth 8-3886] merging instance 'math/s3[8]' (FD) to 'math/s15[9]'
+INFO: [Synth 8-3886] merging instance 'math/s3[9]' (FD) to 'math/s15[10]'
+INFO: [Synth 8-3886] merging instance 'math/s3[10]' (FD) to 'math/s15[11]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 806.859 ; gain = 488.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                  | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------------------+-----------+----------------------+-----------------+
+|midi_shell  | math/yvalues_reg_reg        | Implied   | 32 x 12              | RAM16X1S x 24   | 
+|midi_shell  | datapath/velocities_reg_reg | Implied   | 32 x 8               | RAM32M x 2      | 
++------------+-----------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|midi_shell  | (A2*(B:0x36))' | 12     | 6      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x38))' | 12     | 6      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x3c))' | 12     | 6      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x44))' | 12     | 7      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x48))' | 12     | 7      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x4c))' | 12     | 7      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x50))' | 12     | 7      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x56))' | 12     | 7      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x5a))' | 12     | 7      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x60))' | 12     | 7      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x66))' | 12     | 7      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x6c))' | 12     | 7      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x72))' | 12     | 7      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x78))' | 12     | 7      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x88))' | 12     | 8      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x90))' | 12     | 8      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0x98))' | 12     | 8      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0xa0))' | 12     | 8      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0xaa))' | 12     | 8      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0xb4))' | 12     | 8      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0xbe))' | 12     | 8      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0xca))' | 12     | 8      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|midi_shell  | (A2*(B:0xd6))' | 12     | 8      | -      | -      | 12     | 1    | 0    | -    | -    | -     | 1    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 839.590 ; gain = 520.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 852.516 ; gain = 533.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                  | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------------------+-----------+----------------------+-----------------+
+|midi_shell  | math/yvalues_reg_reg        | Implied   | 32 x 12              | RAM16X1S x 24   | 
+|midi_shell  | datapath/velocities_reg_reg | Implied   | 32 x 8               | RAM32M x 2      | 
++------------+-----------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 869.789 ; gain = 551.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 869.789 ; gain = 551.086
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 869.789 ; gain = 551.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 869.789 ; gain = 551.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 869.789 ; gain = 551.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 869.789 ; gain = 551.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 869.789 ; gain = 551.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_y |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_y |     1|
+|2     |BUFG          |     2|
+|3     |CARRY4        |    20|
+|4     |DSP48E1_1     |    23|
+|5     |LUT1          |    10|
+|6     |LUT2          |    31|
+|7     |LUT3          |    57|
+|8     |LUT4          |    52|
+|9     |LUT5          |    46|
+|10    |LUT6          |   121|
+|11    |MUXF7         |    36|
+|12    |MUXF8         |    12|
+|13    |ODDR          |     1|
+|14    |RAM16X1S      |    24|
+|15    |RAM32M        |     2|
+|16    |FDRE          |   173|
+|17    |IBUF          |     2|
+|18    |OBUF          |     3|
++------+--------------+------+
+
+Report Instance Areas: 
++------+---------------+----------------------+------+
+|      |Instance       |Module                |Cells |
++------+---------------+----------------------+------+
+|1     |top            |                      |   632|
+|2     |  clk_division |midi_clock_generation |    18|
+|3     |  controller   |midi_controller       |    56|
+|4     |  datapath     |midi_datapath         |    46|
+|5     |  math         |midi_math             |   404|
+|6     |  transmitter  |midi_spi_transmitter  |    85|
++------+---------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 869.789 ; gain = 551.086
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 869.789 ; gain = 220.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 869.789 ; gain = 551.086
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 118 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 869.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 26 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 24 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+113 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 869.789 ; gain = 562.605
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 869.789 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'O:/midi_project/midi_project.runs/synth_1/midi_shell.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file midi_shell_utilization_synth.rpt -pb midi_shell_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  6 20:08:41 2022...

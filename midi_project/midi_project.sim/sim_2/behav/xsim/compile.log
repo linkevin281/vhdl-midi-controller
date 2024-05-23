@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/midi_project/midi_project.srcs/sources_1/ip/blk_mem_gen_y/sim/blk_mem_gen_y.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_y'
+INFO: [VRFC 10-163] Analyzing VHDL file "O:/midi_project/midi_project.srcs/sources_1/ip/blk_mem_gen_y/demo_tb/tb_blk_mem_gen_y.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_blk_mem_gen_y'

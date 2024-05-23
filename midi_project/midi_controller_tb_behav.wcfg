@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="midi_controller_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="midi_controller_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1534000001fs"></ZoomEndTime>
+      <Cursor1Time time="3000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="147"></NameColumnWidth>
+      <ValueColumnWidth column_width="61"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/midi_controller_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/delete" type="logic">
+      <obj_property name="ElementShortName">delete</obj_property>
+      <obj_property name="ObjectShortName">delete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/store" type="logic">
+      <obj_property name="ElementShortName">store</obj_property>
+      <obj_property name="ObjectShortName">store</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/midi" type="logic">
+      <obj_property name="ElementShortName">midi</obj_property>
+      <obj_property name="ObjectShortName">midi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/New_Data" type="logic">
+      <obj_property name="ElementShortName">New_Data</obj_property>
+      <obj_property name="ObjectShortName">New_Data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/Tx" type="logic">
+      <obj_property name="ElementShortName">Tx</obj_property>
+      <obj_property name="ObjectShortName">Tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/clk_port" type="logic">
+      <obj_property name="ElementShortName">clk_port</obj_property>
+      <obj_property name="ObjectShortName">clk_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/midi_port" type="logic">
+      <obj_property name="ElementShortName">midi_port</obj_property>
+      <obj_property name="ObjectShortName">midi_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/delete_port" type="logic">
+      <obj_property name="ElementShortName">delete_port</obj_property>
+      <obj_property name="ObjectShortName">delete_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/store_port" type="logic">
+      <obj_property name="ElementShortName">store_port</obj_property>
+      <obj_property name="ObjectShortName">store_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/add_port" type="logic">
+      <obj_property name="ElementShortName">add_port</obj_property>
+      <obj_property name="ObjectShortName">add_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/update_port" type="logic">
+      <obj_property name="ElementShortName">update_port</obj_property>
+      <obj_property name="ObjectShortName">update_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/reset_port" type="logic">
+      <obj_property name="ElementShortName">reset_port</obj_property>
+      <obj_property name="ObjectShortName">reset_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/check_en_port" type="logic">
+      <obj_property name="ElementShortName">check_en_port</obj_property>
+      <obj_property name="ObjectShortName">check_en_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/velshift_en_port" type="logic">
+      <obj_property name="ElementShortName">velshift_en_port</obj_property>
+      <obj_property name="ObjectShortName">velshift_en_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/valshift_en_port" type="logic">
+      <obj_property name="ElementShortName">valshift_en_port</obj_property>
+      <obj_property name="ObjectShortName">valshift_en_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/statshift_en_port" type="logic">
+      <obj_property name="ElementShortName">statshift_en_port</obj_property>
+      <obj_property name="ObjectShortName">statshift_en_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/cs" type="other">
+      <obj_property name="ElementShortName">cs</obj_property>
+      <obj_property name="ObjectShortName">cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/ns" type="other">
+      <obj_property name="ElementShortName">ns</obj_property>
+      <obj_property name="ObjectShortName">ns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/subcs" type="other">
+      <obj_property name="ElementShortName">subcs</obj_property>
+      <obj_property name="ObjectShortName">subcs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/subns" type="other">
+      <obj_property name="ElementShortName">subns</obj_property>
+      <obj_property name="ObjectShortName">subns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/TC" type="logic">
+      <obj_property name="ElementShortName">TC</obj_property>
+      <obj_property name="ObjectShortName">TC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/bitcount" type="array">
+      <obj_property name="ElementShortName">bitcount[4:0]</obj_property>
+      <obj_property name="ObjectShortName">bitcount[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/Baud_Counter" type="array">
+      <obj_property name="ElementShortName">Baud_Counter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Baud_Counter[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/baud_en" type="logic">
+      <obj_property name="ElementShortName">baud_en</obj_property>
+      <obj_property name="ObjectShortName">baud_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/count_en" type="logic">
+      <obj_property name="ElementShortName">count_en</obj_property>
+      <obj_property name="ObjectShortName">count_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/rst_counts" type="logic">
+      <obj_property name="ElementShortName">rst_counts</obj_property>
+      <obj_property name="ObjectShortName">rst_counts</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/prevTC" type="logic">
+      <obj_property name="ElementShortName">prevTC</obj_property>
+      <obj_property name="ObjectShortName">prevTC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/midi_controller_tb/uut/BAUD_PERIOD" type="other">
+      <obj_property name="ElementShortName">BAUD_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">BAUD_PERIOD</obj_property>
+   </wvobject>
+</wave_config>
